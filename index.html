@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atha - Your Phone's Second Brain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+<!--     <nav class="nav">
+        <div class="nav-logo">Atha</div>
+        <a href="#waitlist" class="nav-link">Join Waitlist</a>
+    </nav> -->
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Atha: Your Phone's Second Brain</h1>
+            <p class="hero-subtitle">Automatically turn scattered texts into organized action</p>
+            <a href="https://tally.so/r/dW04qN" target="_blank" class="hero-cta-link">Join the Waitlist</a>
+            <!-- <a id="globalWaitlist" class="global-waitlist top-right" href="#waitlist" aria-label="Join the waitlist">Join Waitlist</a> -->
+
+            <!-- Phone Mockup Container -->
+            <div class="phone-container">
+                <!-- Message Bubbles (swirling outside phone) -->
+                <div class="messages-container" id="messagesContainer">
+                    <div class="message-bubble blue" data-text="Let's grab coffee next week">Let's grab coffee next week</div>
+                    <div class="message-bubble green" data-text="Deadline Friday 5pm">Deadline Friday 5pm</div>
+                    <div class="message-bubble pink" data-text="What was that restaurant?">What was that restaurant?</div>
+                    <div class="message-bubble purple" data-text="Don't forget to call Mom">Don't forget to call Mom</div>
+                    <div class="message-bubble yellow" data-text="Invoice due 3/12">Invoice due 3/12</div>
+                    <div class="message-bubble coral" data-text="Bring dessert">Bring dessert</div>
+                    <div class="message-bubble light-blue" data-text="Pick up groceries">Pick up groceries</div>
+                    <div class="message-bubble pink" data-text="Dinner tonight?">Dinner tonight?</div>
+                    <div class="message-bubble blue" data-text="Flight at 8am">Flight at 8am</div>
+                    <div class="message-bubble green" data-text="Weekly sync moved">Weekly sync moved</div>
+                    <div class="message-bubble purple" data-text="Call Dr. Lee">Call Dr. Lee</div>
+                    <div class="message-bubble coral" data-text="New follow">New follow</div>
+                    <div class="message-bubble yellow" data-text="Congrats! 🎉">Congrats! 🎉</div>
+                    <div class="message-bubble light-blue" data-text="Re: Proposal notes">Re: Proposal notes</div>
+                </div>
+
+                <!-- iPhone Mockup -->
+                <div class="phone" id="phone">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen" id="phoneScreen">
+                        <!-- Initial blank screen -->
+                        <div class="screen-blank" id="screenBlank"></div>
+
+                        <!-- Dashboard content (hidden initially) -->
+                        <div class="dashboard" id="dashboard">
+                            <div class="dashboard-header">
+                                <h2>Good afternoon</h2>
+                                <p class="dashboard-subtext">You have 4 pending items</p>
+                            </div>
+
+                            <!-- Context-aware notification -->
+                            <div class="notification" id="notification">
+                                <span class="notification-icon">☕</span>
+                                <span class="notification-text">You're near Blue Bottle — grab coffee with Sarah?</span>
+                            </div>
+
+                            <div class="section-header">
+                                <h3>Respond Soon</h3>
+                                <span class="top-badge">Top 2</span>
+                            </div>
+
+                            <div class="task-card">
+                                <div class="task-avatar">SC</div>
+                                <div class="task-content">
+                                    <div class="task-meta">
+                                        <span class="task-name">Sarah Chen</span>
+                                        <span class="task-time">2h ago</span>
+                                    </div>
+                                    <div class="task-badges">
+                                        <span class="badge badge-warning">⏱ Waiting 2h ago</span>
+                                        <span class="badge badge-friend">❤️ Close friend</span>
+                                    </div>
+                                    <p class="task-text">Share the 3 venue options we discussed</p>
+                                    <p class="task-reason">Why this surfaced: Mentioned 'venues' in DMs</p>
+                                </div>
+                            </div>
+
+                            <div class="task-card">
+                                <div class="task-avatar">M</div>
+                                <div class="task-content">
+                                    <div class="task-meta">
+                                        <span class="task-name">Mom</span>
+                                        <span class="task-time">5h ago</span>
+                                    </div>
+                                    <div class="task-badges">
+                                        <span class="badge badge-warning">⏱ Waiting 5h ago</span>
+                                        <span class="badge badge-friend">❤️ Close friend</span>
+                                    </div>
+                                    <p class="task-text">Discuss summer trip details</p>
+                                    <p class="task-reason">Why this surfaced: Time-sensitive + high-priority contact</p>
+                                </div>
+                            </div>
+
+                            <div class="nav-bar">
+                                <div class="nav-item active">
+                                    <span class="nav-icon">🏠</span>
+                                    <span class="nav-label">Dashboard</span>
+                                </div>
+                                <div class="nav-item">
+                                    <span class="nav-icon">🧠</span>
+                                    <span class="nav-label">Insights</span>
+                                </div>
+                                <div class="nav-item">
+                                    <span class="nav-icon">💬</span>
+                                    <span class="nav-label">Messages</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button (appears after animation) -->
+            <!-- <button class="cta-button" id="ctaButton">Join the Waitlist</button> -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="features-title">Information overload, solved</h2>
+            <p class="features-subtitle">Transform chaotic conversations into actionable clarity</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>AI-Powered Extraction</h3>
+                    <p>Atha's AI scans your conversations across messaging platforms—extracting tasks, deadlines, promises, and plans—then organizes them into a beautiful, intuitive dashboard. No manual entry required.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Context-Aware Reminders</h3>
+                    <p>Get intelligent nudges based on location, time, and relationship context. Remember that coffee shop recommendation when you're nearby, or respond to your friend when the timing is right.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Unified Dashboard</h3>
+                    <p>Stop switching between apps to remember what matters. Your actionable items live in a single, clean dashboard that reduces cognitive load and helps you actually follow through.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Future Integrations</h3>
+                    <p>We're just getting started. Upcoming integrations include more messaging apps, calendar sync, and email—building your true second brain across every communication channel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="waitlist">
+        <div class="final-cta-content">
+            <h2>Stop forgetting. Start doing.</h2>
+            <p>Join the waitlist and be the first to experience your phone's second brain</p>
+            <form class="waitlist-form" id="waitlistForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Join Waitlist</button>
+            </form>
+            <p class="early-access">Early access launching Spring 2026</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
