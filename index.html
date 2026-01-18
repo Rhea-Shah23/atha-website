@@ -50,52 +50,76 @@
 
                         <!-- Dashboard content (hidden initially) -->
                         <div class="dashboard" id="dashboard">
+                            <!-- iPhone-style notification at top -->
+                            <div class="ios-notification" id="notification">
+                                <div class="notification-header">
+                                    <span class="notification-app">📍 Atha</span>
+                                    <span class="notification-time">now</span>
+                                </div>
+                                <div class="notification-content">
+                                    <div class="notification-title">You're near Blue Bottle</div>
+                                    <div class="notification-body">Grab coffee with Sarah?</div>
+                                </div>
+                            </div>
+
                             <div class="dashboard-header">
                                 <h2>Good afternoon</h2>
                                 <p class="dashboard-subtext">You have 4 pending items</p>
                             </div>
 
-                            <!-- Context-aware notification -->
-                            <div class="notification" id="notification">
-                                <span class="notification-icon">☕</span>
-                                <span class="notification-text">You're near Blue Bottle — grab coffee with Sarah?</span>
-                            </div>
-
                             <div class="section-header">
-                                <h3>Respond Soon</h3>
-                                <span class="top-badge">Top 2</span>
+                                <h3>Pending Responses</h3>
+                                <a href="#" class="view-all">View all →</a>
                             </div>
 
                             <div class="task-card">
-                                <div class="task-avatar">SC</div>
+                                <div class="task-avatar">👩🏻</div>
                                 <div class="task-content">
                                     <div class="task-meta">
                                         <span class="task-name">Sarah Chen</span>
                                         <span class="task-time">2h ago</span>
                                     </div>
-                                    <div class="task-badges">
-                                        <span class="badge badge-warning">⏱ Waiting 2h ago</span>
-                                        <span class="badge badge-friend">❤️ Close friend</span>
-                                    </div>
-                                    <p class="task-text">Share the 3 venue options we discussed</p>
-                                    <p class="task-reason">Why this surfaced: Mentioned 'venues' in DMs</p>
+                                    <p class="task-text">Send wedding venue options to Sarah</p>
+                                    <p class="task-context">💡 Tonight 7-9pm (when they're most active)</p>
                                 </div>
                             </div>
 
                             <div class="task-card">
-                                <div class="task-avatar">M</div>
+                                <div class="task-avatar">👩</div>
                                 <div class="task-content">
                                     <div class="task-meta">
                                         <span class="task-name">Mom</span>
                                         <span class="task-time">5h ago</span>
                                     </div>
-                                    <div class="task-badges">
-                                        <span class="badge badge-warning">⏱ Waiting 5h ago</span>
-                                        <span class="badge badge-friend">❤️ Close friend</span>
-                                    </div>
-                                    <p class="task-text">Discuss summer trip details</p>
-                                    <p class="task-reason">Why this surfaced: Time-sensitive + high-priority contact</p>
+                                    <p class="task-text">Call Mom about trip planning</p>
+                                    <p class="task-context">💡 Tonight after 6pm (when they usually respond)</p>
                                 </div>
+                            </div>
+
+                            <div class="task-card">
+                                <div class="task-avatar">👨🏻‍💼</div>
+                                <div class="task-content">
+                                    <div class="task-meta">
+                                        <span class="task-name">David Kim</span>
+                                        <span class="task-time">3h ago</span>
+                                    </div>
+                                    <p class="task-text">Project sync with David</p>
+                                    <p class="task-context">💡 Good time now (they're likely at work)</p>
+                                </div>
+                            </div>
+
+                            <div class="section-header" style="margin-top: 24px;">
+                                <h3>Ideas & Thoughts</h3>
+                                <a href="#" class="view-all">Archive all</a>
+                            </div>
+
+                            <div class="idea-card">
+                                <div class="idea-icon">👩🏻</div>
+                                <div class="idea-content">
+                                    <div class="idea-title">Weekend getaway to wine country</div>
+                                    <div class="idea-detail">Sarah suggested a weekend trip to Napa</div>
+                                </div>
+                                <button class="idea-expand">+</button>
                             </div>
 
                             <div class="nav-bar">
@@ -111,9 +135,16 @@
                                     <span class="nav-icon">💬</span>
                                     <span class="nav-label">Messages</span>
                                 </div>
+                                <div class="nav-item">
+                                    <span class="nav-icon">👥</span>
+                                    <span class="nav-label">People</span>
+                                </div>
+                                <div class="nav-item">
+                                    <span class="nav-icon">⚙️</span>
+                                    <span class="nav-label">Settings</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
 

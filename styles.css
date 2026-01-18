@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     background: radial-gradient(ellipse at top, #FFE5D4 0%, #FFF5EE 30%, #FFFFFF 60%, #F8F8F8 100%);
     background-attachment: fixed;
     color: #2D2D2D;
@@ -260,13 +261,12 @@ body {
 }
 
 
-/* Dashboard */
-/* Dashboard */
+/* Dashboard - Updated Modern Design */
 .dashboard {
     width: 100%;
     height: 100%;
-    padding: 50px 20px 20px;
-    background: #FFFFFF;
+    padding: 16px;
+    background: #F8F9FA;
     position: absolute;
     top: 0;
     left: 0;
@@ -278,8 +278,60 @@ body {
     z-index: 10;
 }
 
+/* iOS-Style Notification */
+.ios-notification {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    margin-top: 36px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.ios-notification.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.notification-app {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6B6B6B;
+}
+
+.notification-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.notification-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2D2D2D;
+    margin-bottom: 2px;
+}
+
+.notification-body {
+    font-size: 13px;
+    color: #6B6B6B;
+}
+
+/* Dashboard Header */
 .dashboard-header h2 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     color: #2D2D2D;
     margin-bottom: 4px;
@@ -287,36 +339,175 @@ body {
 
 .dashboard-subtext {
     font-size: 14px;
-    color: #6B6B6B;
-    margin-bottom: 20px;
+    color: #8E8E93;
+    margin-bottom: 24px;
 }
 
-/* Notification */
-.notification {
-    background: #FF8C42;
-    color: white;
-    padding: 12px 16px;
-    border-radius: 12px;
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.section-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2D2D2D;
+}
+
+.view-all {
+    font-size: 14px;
+    color: #007AFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Task Cards - Modern Clean Design */
+.task-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+}
+
+.task-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #F0F0F0;
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.task-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.task-name {
+    font-weight: 600;
+    font-size: 15px;
+    color: #2D2D2D;
+}
+
+.task-time {
     font-size: 13px;
+    color: #8E8E93;
+}
+
+.task-text {
+    font-size: 14px;
+    color: #2D2D2D;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.task-context {
+    font-size: 12px;
+    color: #34C759;
     font-weight: 500;
-    box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
-    opacity: 0;
-    transform: translateY(-20px);
 }
 
-.notification.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 2.5s;
+/* Ideas Card */
+.idea-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
 }
 
-.notification-icon {
-    font-size: 16px;
+.idea-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
 }
+
+.idea-content {
+    flex: 1;
+}
+
+.idea-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2D2D2D;
+    margin-bottom: 2px;
+}
+
+.idea-detail {
+    font-size: 12px;
+    color: #8E8E93;
+}
+
+.idea-expand {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #F0F0F0;
+    border: none;
+    font-size: 18px;
+    color: #007AFF;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Navigation Bar - iOS Style */
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0 4px;
+    margin-top: 16px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: #8E8E93;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: #007AFF;
+}
+
+.nav-icon {
+    font-size: 22px;
+}
+
+.nav-label {
+    font-weight: 500;
+}
+
 
 /* Section Header */
 .section-header {
