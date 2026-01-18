@@ -130,15 +130,17 @@ body {
 
 
 /* Phone Container */
-.phone-container {
+.phone {
     position: relative;
-    width: 100%;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    width: 340px;
+    height: 680px;
+    background: #1a1a1a;
+    border-radius: 50px;
+    padding: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    z-index: 5;
 }
+
 
 /* Message Bubbles */
 .messages-container {
@@ -146,6 +148,7 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: 20;
 }
 
 .message-bubble {
@@ -827,7 +830,7 @@ body {
     /* Phone Container - Mobile Optimized */
     .phone-container {
         height: 550px;
-        padding: 0 10px;
+        padding: 20 10px;
     }
 
     .phone {
