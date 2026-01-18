@@ -130,17 +130,15 @@ body {
 
 
 /* Phone Container */
-.phone {
+.phone-container {
     position: relative;
-    width: 340px;
-    height: 680px;
-    background: #1a1a1a;
-    border-radius: 50px;
-    padding: 12px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    z-index: 5;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
-
 
 /* Message Bubbles */
 .messages-container {
@@ -148,7 +146,6 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 20;
 }
 
 .message-bubble {
@@ -808,89 +805,49 @@ body {
 }
 
 /* Mobile Responsive */
-/* Mobile Responsive - Enhanced */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 36px;
-        padding: 0 20px;
     }
 
     .hero-subtitle {
         font-size: 18px;
-        margin-bottom: 30px;
-        padding: 0 20px;
+        margin-bottom: 40px;
     }
 
-    .hero-cta-link {
-        font-size: 16px;
-        padding: 14px 32px;
-        margin-top: 20px;
-    }
-
-    /* Phone Container - Mobile Optimized */
     .phone-container {
-        height: 550px;
-        padding: 20 10px;
+        height: 600px;
     }
 
     .phone {
-        width: 300px;
-        height: 600px;
+        width: 280px;
+        height: 560px;
         border-radius: 40px;
     }
 
-    .phone-notch {
-        width: 120px;
-        height: 24px;
-    }
-
-    /* Message Bubbles - Mobile Positioning Fix */
-    .messages-container {
-        max-width: 100vw;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .message-bubble {
-        font-size: 11px;
-        padding: 8px 14px;
-        max-width: 140px;
-        white-space: normal;
-        line-height: 1.3;
+        font-size: 12px;
+        padding: 10px 16px;
     }
 
-    /* Reposition bubbles to avoid going behind phone on mobile */
-    .message-bubble:nth-child(1) { left: 2%; top: 8%; }
-    .message-bubble:nth-child(2) { left: 12%; top: 2%; }
-    .message-bubble:nth-child(3) { right: 12%; top: 5%; }
-    .message-bubble:nth-child(4) { right: 2%; top: 12%; }
-    .message-bubble:nth-child(5) { left: 0%; top: 32%; }
-    .message-bubble:nth-child(6) { right: 0%; top: 38%; }
-    .message-bubble:nth-child(7) { left: 5%; top: 70%; }
-    .message-bubble:nth-child(8) { right: 5%; top: 75%; }
-    .message-bubble:nth-child(9) { left: 2%; top: 90%; }
-    .message-bubble:nth-child(10) { right: 2%; top: 92%; }
-    .message-bubble:nth-child(11) { left: 15%; top: 85%; }
-    .message-bubble:nth-child(12) { right: 15%; top: 82%; }
-    .message-bubble:nth-child(13) { left: 8%; top: 50%; }
-    .message-bubble:nth-child(14) { right: 8%; top: 55%; }
-
-    /* Dashboard - Mobile Optimized */
-    .dashboard {
-        padding: 12px;
+    .features-title {
+        font-size: 32px;
     }
 
-    .dashboard-header h2 {
-        font-size: 24px;
+    .features-subtitle {
+        font-size: 16px;
     }
 
-    .ios-notification {
-        margin-top: 28px;
-        padding: 10px 12px;
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
-    .notification-title {
-        font-size: 13px;
+    .waitlist-form {
+        flex-direction: column;
     }
 
-    .notification-
+    .final-cta h2 {
+        font-size: 32px;
+    }
+}
