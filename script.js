@@ -128,19 +128,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Waitlist form submission
+// Waitlist form submission (with null check)
 const waitlistForm = document.getElementById('waitlistForm');
-waitlistForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const email = e.target.querySelector('input[type="email"]').value;
+if (waitlistForm) {
+    waitlistForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = e.target.querySelector('input[type="email"]').value;
+        
+        // Here you would normally send to your backend
+        console.log('Waitlist signup:', email);
+        
+        // Show success message
+        alert('Thanks for joining the waitlist! We\'ll be in touch soon.');
+        e.target.reset();
+    });
+}
 
-    // Here you would normally send to your backend
-    console.log('Waitlist signup:', email);
-
-    // Show success message
-    alert('Thanks for joining the waitlist! We\'ll be in touch soon.');
-    e.target.reset();
-});
 
 // Add scroll event listener
 window.addEventListener('scroll', handleScroll, { passive: true });
