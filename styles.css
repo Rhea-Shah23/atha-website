@@ -480,6 +480,8 @@ body {
 .features {
     background: #FFFFFF;
     padding: 120px 20px;
+    background: radial-gradient(ellipse at center, #FFE5D4 0%, #FFF5EE 30%, #FFFFFF 60%, #F8F8F8 100%);
+    background-attachment: fixed;
 }
 
 .features-container {
