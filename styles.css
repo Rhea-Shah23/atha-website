@@ -7,11 +7,14 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
-    background: #F5F5F5;
+    background: radial-gradient(ellipse at top, #FFE5D4 0%, #FFF5EE 30%, #FFFFFF 60%, #F8F8F8 100%);
+    background-attachment: fixed;
     color: #2D2D2D;
     overflow-x: hidden;
     line-height: 1.6;
+    min-height: 100vh;
 }
+
 
 .global-waitlist {
   position: fixed;
@@ -76,7 +79,10 @@ body {
     justify-content: center;
     padding: 100px 20px 60px;
     position: relative;
-    background: #F5F5F5;
+   /*  background: #F5F5F5; */
+    background: radial-gradient(ellipse at center, #FFE5D4 0%, #FFF5EE 30%, #FFFFFF 60%, #F8F8F8 100%);
+    background-attachment: fixed;
+    
 }
 
 .hero-content {
@@ -91,11 +97,12 @@ body {
     color: #FF8C42;
     margin-bottom: 16px;
     line-height: 1.2;
+    font-family: 'Georgia', serif;
 }
 
 .hero-subtitle {
     font-size: 22px;
-    color: #2D2D2D;
+    color: #2D2D2D; 
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -146,7 +153,7 @@ body {
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
-    color: #2D2D2D;
+    color: #FFFFFF;
     white-space: nowrap;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     animation: swirl 12s infinite ease-in-out;
@@ -154,8 +161,8 @@ body {
 }
 
 /* Bubble Colors */
-.message-bubble.blue { background: #C4E0FF; }
-.message-bubble.green { background: #C8F5C8; }
+.message-bubble.blue { background: #007AFF; }
+.message-bubble.green { background: #65C466; }
 .message-bubble.pink { background: #FFD4E5; }
 .message-bubble.purple { background: #E5D4FF; }
 .message-bubble.yellow { background: #FFF4C4; }
