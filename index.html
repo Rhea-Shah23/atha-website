@@ -3,84 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atha - Your Phone's Second Brain</title>
+    <title>Atha - Unprompted Proactive AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-<!--     <nav class="nav">
-        <div class="nav-logo">Atha</div>
-        <a href="#waitlist" class="nav-link">Join Waitlist</a>
-    </nav> -->
+    <!-- Fixed Top Waitlist Button -->
+    <a href="https://tally.so/r/dW04qN" target="_blank" class="global-waitlist top-right">Join Waitlist</a>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Atha: Your Phone's Second Brain</h1>
-            <p class="hero-subtitle"> The world's first unprompted AI, turning scattered messages into organized action.</p>
+            <div class="credentials">Built by researchers from CMU, NVIDIA, UIUC</div>
+            <h1 class="hero-title">Atha</h1>
+            <p class="hero-subtitle">The World's First Unprompted, Proactive AI Productivity Tool. Turn Your Scattered Messages Into Organized Action</p>
             <a href="https://tally.so/r/dW04qN" target="_blank" class="hero-cta-link">Join the Waitlist</a>
-            <!-- <a id="globalWaitlist" class="global-waitlist top-right" href="#waitlist" aria-label="Join the waitlist">Join Waitlist</a> -->
 
-            <!-- Phone Mockup Container -->
+            <!-- Phone Container with Message Bubbles -->
             <div class="phone-container">
-                <!-- Message Bubbles (swirling outside phone) -->
+                <!-- Swirling Message Bubbles -->
                 <div class="messages-container" id="messagesContainer">
-                    <div class="message-bubble blue" data-text="Let's grab coffee next week">Let's grab coffee next week</div>
-                    <div class="message-bubble green" data-text="Deadline Friday 5pm">Deadline Friday 5pm</div>
-                    <div class="message-bubble blue" data-text="What was that restaurant?">What was that restaurant?</div>
-                    <div class="message-bubble green" data-text="Don't forget to call Mom">Don't forget to call Mom</div>
-                    <div class="message-bubble blue" data-text="Invoice due 3/12">Invoice due 3/12</div>
-                    <div class="message-bubble blue" data-text="Bring dessert">Bring dessert</div>
-                    <div class="message-bubble blue" data-text="Pick up groceries">Pick up groceries</div>
-                    <div class="message-bubble blue" data-text="Dinner tonight?">Dinner tonight?</div>
-                    <div class="message-bubble blue" data-text="Flight at 8am">Flight at 8am</div>
-                    <div class="message-bubble green" data-text="Weekly sync moved">Weekly sync moved</div>
-                    <div class="message-bubble green" data-text="Call Dr. Lee">Call Dr. Lee</div>
-                    <div class="message-bubble blue" data-text="New follow">New follow</div>
-                    <div class="message-bubble blue" data-text="Congrats! 🎉">Congrats! 🎉</div>
-                    <div class="message-bubble blue" data-text="Re: Proposal notes">Re: Proposal notes</div>
+                    <div class="message-bubble blue">Dinner at 7?</div>
+                    <div class="message-bubble green">Don't forget Mom's gift</div>
+                    <div class="message-bubble pink">Coffee next week?</div>
+                    <div class="message-bubble purple">Send those files</div>
+                    <div class="message-bubble yellow">Pick up groceries</div>
+                    <div class="message-bubble coral">Meeting moved to 3pm</div>
+                    <div class="message-bubble light-blue">Can you review this?</div>
+                    <div class="message-bubble blue">Dentist appointment</div>
+                    <div class="message-bubble green">Book flights</div>
+                    <div class="message-bubble pink">Call about invoice</div>
+                    <div class="message-bubble purple">Gym at 6am</div>
+                    <div class="message-bubble yellow">Birthday party Saturday</div>
+                    <div class="message-bubble coral">Send proposal</div>
+                    <div class="message-bubble light-blue">Team lunch Friday</div>
                 </div>
 
-                <!-- iPhone Mockup -->
+                <!-- Phone Mockup -->
                 <div class="phone" id="phone">
                     <div class="phone-notch"></div>
                     <div class="phone-screen" id="phoneScreen">
-                        <!-- Initial blank screen -->
+                        <!-- Blank Screen (initially visible) -->
                         <div class="screen-blank" id="screenBlank"></div>
 
-                        <!-- Dashboard content (hidden initially) -->
+                        <!-- Dashboard (revealed after animation) -->
                         <div class="dashboard" id="dashboard">
-                            <!-- iPhone-style notification at top -->
+                            <!-- iOS-Style Notification -->
                             <div class="ios-notification" id="notification">
                                 <div class="notification-header">
-                                    <span class="notification-app">📍 Atha</span>
+                                    <span class="notification-app">ATHA</span>
                                     <span class="notification-time">now</span>
                                 </div>
-                                <div class="notification-content">
-                                    <div class="notification-title">You're near Blue Bottle</div>
-                                    <div class="notification-body">Grab coffee with Sarah?</div>
-                                </div>
+                                <div class="notification-title">Time to reach out to Sarah</div>
+                                <div class="notification-body">💡 They're most active now (7-9pm)</div>
                             </div>
 
+                            <!-- Dashboard Header -->
                             <div class="dashboard-header">
-                                <h2>Good afternoon</h2>
+                                <h2>Today</h2>
                                 <p class="dashboard-subtext">You have 4 pending items</p>
                             </div>
 
+                            <!-- Task Cards -->
                             <div class="section-header">
-                                <h3>Pending Responses</h3>
-                                <a href="#" class="view-all">View all →</a>
+                                <h3>Priority</h3>
                             </div>
 
                             <div class="task-card">
-                                <div class="task-avatar">👩🏻</div>
+                                <div class="task-avatar">👰</div>
                                 <div class="task-content">
                                     <div class="task-meta">
-                                        <span class="task-name">Sarah Chen</span>
-                                        <span class="task-time">2h ago</span>
+                                        <span class="task-name">Sarah</span>
+                                        <span class="task-time">2d ago</span>
                                     </div>
-                                    <p class="task-text">Send wedding venue options to Sarah</p>
-                                    <p class="task-context">💡 Tonight 7-9pm (when they're most active)</p>
+                                    <div class="task-text">Send wedding venue options to Sarah</div>
+                                    <div class="task-context">💡 Tonight 7-9pm (when they're most active)</div>
                                 </div>
                             </div>
 
@@ -89,92 +88,69 @@
                                 <div class="task-content">
                                     <div class="task-meta">
                                         <span class="task-name">Mom</span>
-                                        <span class="task-time">5h ago</span>
+                                        <span class="task-time">1d ago</span>
                                     </div>
-                                    <p class="task-text">Call Mom about trip planning</p>
-                                    <p class="task-context">💡 Tonight after 6pm (when they usually respond)</p>
+                                    <div class="task-text">Call Mom about trip planning</div>
+                                    <div class="task-context">💡 Tonight after 6pm (when they usually respond)</div>
                                 </div>
                             </div>
 
                             <div class="task-card">
-                                <div class="task-avatar">👨🏻‍💼</div>
+                                <div class="task-avatar">👨</div>
                                 <div class="task-content">
                                     <div class="task-meta">
-                                        <span class="task-name">David Kim</span>
-                                        <span class="task-time">3h ago</span>
+                                        <span class="task-name">David</span>
+                                        <span class="task-time">5h ago</span>
                                     </div>
-                                    <p class="task-text">Project sync with David</p>
-                                    <p class="task-context">💡 Good time now (they're likely at work)</p>
+                                    <div class="task-text">Project sync with David</div>
+                                    <div class="task-context">💡 Good time now (they're likely at work)</div>
                                 </div>
                             </div>
 
-                            <div class="section-header" style="margin-top: 24px;">
-                                <h3>Ideas & Thoughts</h3>
-                                <a href="#" class="view-all">Archive all</a>
-                            </div>
-
-                            <div class="idea-card">
-                                <div class="idea-icon">👩🏻</div>
-                                <div class="idea-content">
-                                    <div class="idea-title">Weekend getaway to wine country</div>
-                                    <div class="idea-detail">Sarah suggested a weekend trip to Napa</div>
-                                </div>
-                                <button class="idea-expand">+</button>
-                            </div>
-
+                            <!-- Bottom Navigation -->
                             <div class="nav-bar">
                                 <div class="nav-item active">
-                                    <span class="nav-icon">🏠</span>
-                                    <span class="nav-label">Dashboard</span>
+                                    <div class="nav-icon">📋</div>
+                                    <div class="nav-label">Tasks</div>
                                 </div>
                                 <div class="nav-item">
-                                    <span class="nav-icon">🧠</span>
-                                    <span class="nav-label">Insights</span>
+                                    <div class="nav-icon">💡</div>
+                                    <div class="nav-label">Ideas</div>
                                 </div>
                                 <div class="nav-item">
-                                    <span class="nav-icon">💬</span>
-                                    <span class="nav-label">Messages</span>
-                                </div>
-                                <div class="nav-item">
-                                    <span class="nav-icon">👥</span>
-                                    <span class="nav-label">People</span>
-                                </div>
-                                <div class="nav-item">
-                                    <span class="nav-icon">⚙️</span>
-                                    <span class="nav-label">Settings</span>
+                                    <div class="nav-icon">👤</div>
+                                    <div class="nav-label">People</div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- CTA Button (appears after animation) -->
-            <!-- <button class="cta-button" id="ctaButton">Join the Waitlist</button> -->
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="features-container">
-            <h2 class="features-title"> Never Prompt. Never Forget</h2>
-            <p class="features-subtitle"> The first proactive AI to anticipate what matters and act on it</p>
+            <h2 class="features-title">Never Prompt. Never Forget</h2>
+            <p class="features-subtitle">The first proactive AI to anticipate what matters and act on it</p>
 
             <div class="feature-grid">
                 <div class="feature-card">
-                    <!-- <div class="feature-icon">✨</div> -->
+                    <!-- <div class="feature-icon">🧠</div> -->
                     <h3>AI-Powered Extraction</h3>
-                    <p>Atha's AI automatically captures tasks, plans, and promises from your conversations with no prompts and no manual entry</p>
+                    <p>Atha's AI automatically captures tasks, plans, and promises from your conversations—no prompts, no manual entry required.</p>
                 </div>
 
                 <div class="feature-card">
-                    <!-- <div class="feature-icon">📍</div> -->
-                    <h3>Context-Aware Reminders</h3>
-                    <p>Recieve proactive notifications triggered by location, time, and relationship context so you never miss what matters.</p>
+                    <!-- <div class="feature-icon">🔔</div> -->
+                    <h3>Context-Aware Notifications</h3>
+                    <p>Receive proactive notifications triggered by location, time, and relationship context so you never miss what matters.</p>
                 </div>
 
                 <div class="feature-card">
-                    <!-- <div class="feature-icon">🔗</div> -->
-                    <h3>Single Source of Truth</h3>
+                    <!-- <div class="feature-icon">📊</div> -->
+                    <h3>Automatic Dashboard</h3>
                     <p>One dashboard for everything important across all your messages and communication channels.</p>
                 </div>
             </div>
@@ -184,14 +160,10 @@
     <!-- Final CTA Section -->
     <section class="final-cta" id="waitlist">
         <div class="final-cta-content">
-            <h2 class ="features-title">Your Second Brain Awaits</h2>
-            <p>Join the waitlist and be the first to experience unprompted, proactive AI</p>
-            <a href="https://tally.so/r/dW04qN" target="_blank" class="hero-cta-link">Join the Waitlist</a>
-            <!-- <form class="waitlist-form" id="waitlistForm">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Join Waitlist</button>
-            </form> -->
-            <p class="early-access">Early access launching Spring 2026</p>
+            <h2>Your Second Brain Awaits</h2>
+            <p> Be the first to experience unprompted, proactive AI. <br> Early access launching Spring 2026</p>
+            <a href="https://tally.so/r/dW04qN" target="_blank" class="waitlist-button">Join Waitlist</a>
+            
         </div>
     </section>
 
