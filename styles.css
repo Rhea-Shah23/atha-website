@@ -136,6 +136,7 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: 100; 
 }
 
 .message-bubble {
@@ -149,6 +150,7 @@ body {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
     animation: swirl 12s infinite ease-in-out;
     opacity: 0.92;
+    z-index: 100;
 }
 
 /* Bubble Colors - Refined palette */
@@ -216,7 +218,7 @@ body {
     padding: 14px;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35),
                 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
-    z-index: 10;
+    z-index: 1;
 }
 
 .phone-notch {
